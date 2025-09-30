@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harsh Jaiswal | Portfolio</title>
+  <style>
+    :root {
+      --primary: #00bcd4;
+      --bg: #121212;
+      --card: #1e1e1e;
+      --text: #f5f5f5;
+      --subtext: #a3a3a3;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      color: var(--subtext);
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button {
+      background: var(--primary);
+      color: black;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 5px;
+      font-weight: bold;
+    }
+
+    .projects, .certificates {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .projects h2, .certificates h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h4 {
+      color: var(--primary);
+    }
+
+    .card-content p {
+      color: var(--subtext);
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    section p {
+      color: var(--subtext);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--subtext);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Harsh Jaiswal</h1>
+    <p>Digital Marketer | Web Developer | Strategist</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#ecommerce">E-commerce</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#certificates">Certificates</a>
+    </nav>
+    <a class="button" href="https://linkedin.com/in/your-linkedin" target="_blank">Visit My LinkedIn</a>
+  </header>
+
+  <section class="projects fade-in" id="projects">
+    <h2>My Projects</h2>
+    <div class="card-grid">
+      <a href="#ecommerce" class="card">
+        <img src="https://via.placeholder.com/300x180?text=E-Commerce" alt="E-Commerce Project" />
+        <div class="card-content">
+          <h4>E-commerce Web App</h4>
+          <p>Full-stack app with cart, payments & admin dashboard.</p>
+        </div>
+      </a>
+      <a href="#dashboard" class="card">
+        <img src="https://via.placeholder.com/300x180?text=Marketing+Dashboard" alt="Dashboard Project" />
+        <div class="card-content">
+          <h4>Marketing Analytics Dashboard</h4>
+          <p>GA4 & Meta Ads integrated dashboard for campaign tracking.</p>
+        </div>
+      </a>
+      <a href="#portfolio" class="card">
+        <img src="https://via.placeholder.com/300x180?text=Portfolio" alt="Portfolio Project" />
+        <div class="card-content">
+          <h4>Portfolio Website</h4>
+          <p>This very site – built with HTML, CSS, JS & love 💙</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="ecommerce" class="fade-in">
+    <h3>E-commerce Web App</h3>
+    <p>This project features a complete online shopping experience including product browsing, secure payments using Stripe, and an admin dashboard for inventory control.</p>
+  </section>
+
+  <section id="dashboard" class="fade-in">
+    <h3>Digital Marketing Dashboard</h3>
+    <p>Track campaign ROI, impressions, CPC, and more. This dashboard pulls data from Google Analytics, Meta Ads, and other APIs.</p>
+  </section>
+
+  <section id="portfolio" class="fade-in">
+    <h3>My Portfolio</h3>
+    <p>Designed to be lightweight and elegant with internal linking and animations. Built using vanilla HTML, CSS and JavaScript.</p>
+  </section>
+
+  <section id="certificates" class="certificates fade-in">
+    <h2>My Certificates</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="pics/certificate1.jpg" alt="Certificate 1">
+        <div class="card-content">
+          <h4>Meta Ads Certification</h4>
+          <p>Issued by Meta for completing professional marketing program.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pics/certificate2.jpg" alt="Certificate 2">
+        <div class="card-content">
+          <h4>Google Analytics Certified</h4>
+          <p>Certification in GA4 data analysis & tracking practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Harsh Jaiswal. All rights reserved.
+  </footer>
+
+  <script>
+    // Reveal elements on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+</body>
+</html>
